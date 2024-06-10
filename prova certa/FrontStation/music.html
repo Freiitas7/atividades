@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front Station - Music Station</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="music.html">Music Station</a></li>
+            <li><a href="quiz.html">Quiz Station</a></li>
+            <li><a href="game.html">Game Station</a></li>
+        </ul>
+    </nav>
+    <div class="music-container">
+        <h1>Music Station</h1>
+        <audio id="music-player" controls>
+            <source id="music-source" src="music1.mp3" type="audio/mp3">
+        </audio>
+        <div class="music-controls">
+            <button id="prev">Anterior</button>
+            <button id="next">Próxima</button>
+            <select id="music-select">
+                <option value="music1.mp3">Música 1</option>
+                <option value="music2.mp3">Música 2</option>
+                <option value="music3.mp3">Música 3</option>
+            </select>
+        </div>
+    </div>
+    <script src="js/music.js"></script>
+</body>
+</html>

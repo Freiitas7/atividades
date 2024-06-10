@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front Station - Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <script>
+        const user = JSON.parse(localStorage.getItem('githubUser'));
+        if (!user) {
+            window.location.href = 'index.html';
+        }
+    </script>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="music.html">Music Station</a></li>
+            <li><a href="quiz.html">Quiz Station</a></li>
+            <li><a href="game.html">Game Station</a></li>
+        </ul>
+    </nav>
+    <div class="home-container">
+        <h1>Bem-vindo ao Front Station</h1>
+        <p>Este site explora as possibilidades com Frontend e JavaScript.</p>
+        <div class="cards">
+            <div class="card">
+                <h2>Music Station</h2>
+                <p>Desfrute do nosso reprodutor de música com 3 faixas diferentes.</p>
+                <a href="music.html">Ir para Music Station</a>
+            </div>
+            <div class="card">
+                <h2>Quiz Station</h2>
+                <p>Teste seus conhecimentos com nosso quiz de história da computação.</p>
+                <a href="quiz.html">Ir para Quiz Station</a>
+            </div>
+            <div class="card">
+                <h2>Game Station</h2>
+                <p>Jogue um divertido jogo desenvolvido em JavaScript.</p>
+                <a href="game.html">Ir para Game Station</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
